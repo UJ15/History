@@ -1,4 +1,4 @@
-# Alorithm_
+# Algorithm_
 
 C4 스터디   
 매일 1문제 이상  
