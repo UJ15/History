@@ -10,5 +10,5 @@ java
 # Solved
 
 [001_유기농배추_1012번](https://velog.io/@dbwogml15/1-Algorithm001)   
-[002_수열의합_1024번](https://velog.io/@dbwogml15/1-Algorithm002)
+[002_수열의합_1024번](https://velog.io/@dbwogml15/1-Algorithm002)   
 [003_행렬_1080번](https://velog.io/@dbwogml15/1-Algorithm003)
