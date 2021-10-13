@@ -15,3 +15,4 @@ java
 [002_수열의합_1024번](https://velog.io/@dbwogml15/1-Algorithm002)   
 [003_행렬_1080번](https://velog.io/@dbwogml15/1-Algorithm003)   
 [004_뒤집기II_1455번](https://velog.io/@dbwogml15/1-Algorithm004)   
+[005_잃어버린 괄호_1541번](https://velog.io/@dbwogml15/1-Algorithm005)
