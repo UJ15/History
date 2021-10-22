@@ -1,5 +1,5 @@
 class Solution {
-    /*
+    /* 내코드는 너무 쓸데없이 복잡해서 다른 사람의 코드를 봤다
      * This list node uses for optimize memory usage
      */
     private static final ListNode ZERO_NODE = new ListNode(0);
