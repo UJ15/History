@@ -27,6 +27,6 @@ class Solution {
             pre = pre.next.next;  //pre = 3앞의 1로 
         }
         
-        return root.next; //앞의 0을 빼주기 위해 next부터 출력
+        return result.next; //앞의 0을 빼주기 위해 next부터 출력
     }
 }
