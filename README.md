@@ -16,4 +16,5 @@ java
 [003_행렬_1080번](https://velog.io/@dbwogml15/1-Algorithm003)   
 [004_뒤집기II_1455번](https://velog.io/@dbwogml15/1-Algorithm004)   
 [005_잃어버린 괄호_1541번](https://velog.io/@dbwogml15/1-Algorithm005)   
-[006_동전0_11047번](https://velog.io/@dbwogml15/1-Algorithm006)
+[006_동전0_11047번](https://velog.io/@dbwogml15/1-Algorithm006)   
+[007_신입사워_1946번](https://velog.io/@dbwogml15/1-Algorithm007)
