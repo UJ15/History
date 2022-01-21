@@ -2,7 +2,7 @@
 
 C4 스터디    
 책 문제는 여기에 (파이썬 알고리즘 인터뷰(리트 코드))  
-백준 문제는 블로그에 (실버2 이상)
+백준 문제는 노션에 (실버2 이상)
 
 java     
 
@@ -11,10 +11,5 @@ java
 
 # Solved
 
-[001_유기농배추_1012번](https://velog.io/@dbwogml15/1-Algorithm001)   
-[002_수열의합_1024번](https://velog.io/@dbwogml15/1-Algorithm002)   
-[003_행렬_1080번](https://velog.io/@dbwogml15/1-Algorithm003)   
-[004_뒤집기II_1455번](https://velog.io/@dbwogml15/1-Algorithm004)   
-[005_잃어버린 괄호_1541번](https://velog.io/@dbwogml15/1-Algorithm005)   
-[006_동전0_11047번](https://velog.io/@dbwogml15/1-Algorithm006)   
-[007_신입사원_1946번](https://velog.io/@dbwogml15/1-Algorithm007)
+[해결한 백준 문제](https://astonishing-existence-a40.notion.site/9cbd592735c444c2beb28b21957cf2a2?v=331b04166c814e28b3e6e2ba9c1b1657)   
+
