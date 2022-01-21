@@ -11,5 +11,5 @@ java
 
 # Solved
 
-[해결한 백준 문제](https://astonishing-existence-a40.notion.site/9cbd592735c444c2beb28b21957cf2a2?v=331b04166c814e28b3e6e2ba9c1b1657)   
+[해결한 백준 문제](https://astonishing-existence-a40.notion.site/9cbd592735c444c2beb28b21957cf2a2?v=331b04166c814e28b3e6e2ba9c1b1657){:target="_blank"}
 
