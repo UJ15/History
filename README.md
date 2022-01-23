@@ -1,15 +1,16 @@
 # Algorithm_
 
-C4 스터디    
-책 문제는 여기에 (파이썬 알고리즘 인터뷰(리트 코드))  
-백준 문제는 노션에 (실버2 이상)
+책 문제는 본 레포지토리에 소스코드를 올린다. (파이썬 알고리즘 인터뷰(리트 코드))  
+백준 문제는 노션에 정리한다. (코드 플러스 백준 알고리즘 강의)
 
-java     
+사용 언어 : java
 
-매일 유형별 3문제 시간 제한 2시간 (백준이나 책(leetcode))   
-시간 초과시 1시간 동안 답보고 다시 구현
+책과 강의로 진행한다.
+
+커리큘럼대로 개념을 공부하고 문제를 풀며 30분 이상 해답을 못 찾으면 강의와 책의 문제풀이 해설을 보고 구현한다.
+정답을 맞췄으면 다른 사람의 풀이를 참고해서 내 코드의 개선할 부분을 찾는다.
 
 # Solved
 
 
-<a href="https://astonishing-existence-a40.notion.site/9cbd592735c444c2beb28b21957cf2a2?v=331b04166c814e28b3e6e2ba9c1b1657" target="_blank">해결한 문제</a>
+<a href="https://astonishing-existence-a40.notion.site/9cbd592735c444c2beb28b21957cf2a2?v=331b04166c814e28b3e6e2ba9c1b1657" target="_blank">백준 해결한 문제</a>
