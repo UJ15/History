@@ -14,12 +14,11 @@
 # Solved
 
 
-<a href="https://astonishing-existence-a40.notion.site/9cbd592735c444c2beb28b21957cf2a2?v=331b04166c814e28b3e6e2ba9c1b1657" target="_blank">백준 해결한 문제</a>
+<a href="https://astonishing-existence-a40.notion.site/9cbd592735c444c2beb28b21957cf2a2?v=331b04166c814e28b3e6e2ba9c1b1657" target="_blank">백준 해결한 문제</a>   
 
 ---
 
 2020-02-28
-풀었던 문제 다시풀기
-스택수열 ~
+풀었던 모든 문제 다시풀기
 
 ---
