@@ -19,6 +19,7 @@ class Solution {
         for (Character key : freq.keySet()){
             result += freq.get(key);
         }
+
         return result;
     }
 }
