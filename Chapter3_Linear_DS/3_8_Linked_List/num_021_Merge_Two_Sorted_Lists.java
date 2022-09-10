@@ -22,7 +22,8 @@ class Solution {
             result = l2;
             l2.next = mergeTwoLists(l1, l2.next);
         }
-        
+
+
         return result;
     }
 }
