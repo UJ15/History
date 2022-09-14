@@ -12,6 +12,7 @@ class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null) return l2;
         if (l2 == null) return l1;
+
         ListNode result;
         
         if (l1.val <= l2.val){//갑비교,  다음음노드를 재귀
