@@ -24,5 +24,28 @@ class Solution {
 
 ## 자바 비트 연산에대해
 
----
+- `>>>` : 오른쪽으로 비트를 이동하며 빈공간을 0으로 채움
+- `^` : XOR 연산
+
+```java
+        int target = 11;
+        int targetPlusOne = 12;
+
+        System.out.println("target  =  " + Integer.toBinaryString(target));
+        System.out.println("target++ = " + Integer.toBinaryString(targetPlusOne));
+        //XOR 연산 후
+        System.out.println("target^target++ = " + Integer.toBinaryString(target^targetPlusOne));
+        //시프트 연산 후
+        System.out.println("XOR>>>2 = " + Integer.toBinaryString((target^targetPlusOne)>>>2));
+        System.out.println("result = " + (targetPlusOne +  ((target^targetPlusOne)>>>2)));
+```
+
+결과
+```java
+      target  =  1011
+      target++ = 1100
+      target^target++ = 111
+      XOR>>>2 = 1
+      result = 13
+```
 
