@@ -9,8 +9,7 @@
 - 각 Entry를 리스트로 정렬
 
 ```java
-        List<Map.Entry<Integer, Integer>> entries = map.entrySet().stream()
-                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
-                .collect(Collectors.toList());
-
+List<Map.Entry<Integer, Integer>> entries = map.entrySet().stream()
+        .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+        .collect(Collectors.toList());
 ```
