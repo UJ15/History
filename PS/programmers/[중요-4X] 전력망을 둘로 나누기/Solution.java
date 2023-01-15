@@ -29,7 +29,6 @@ class Solution {
     }
 
     public static int bfs(int v1, int v2, int n){
-
         Queue<Integer> q = new LinkedList<>();
         boolean visited[] = new boolean[n+1];
 
