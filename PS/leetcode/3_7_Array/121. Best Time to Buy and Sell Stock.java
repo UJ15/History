@@ -16,3 +16,21 @@ class Solution {
         return profit;
     }
 }
+
+/*
+사실 앞에서부터 최솟값과 최대 이익을 갱신하며 풀어도 잘 풀린다. ㅎㅎ 이게 책 풀이
+
+ */
+class Solution {
+    public int maxProfit(int[] prices) {
+        int profit = 0;
+        int min = Integer.MAX_VALUE;
+
+        for (int i = 0 ; i < prices.length ; i++) {
+            min = Math.min(prices[i], min);
+            profit = Math.max(prices[i] - min, profit);
+        }
+
+        return profit;
+    }
+}
