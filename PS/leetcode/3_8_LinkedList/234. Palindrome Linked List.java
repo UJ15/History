@@ -33,7 +33,10 @@ class Solution {
             slower = slower.next;
             faster = faster.next.next;
         }
-
+/**
+ * 해당 라인은 리스트길이가 짝수인지 홀수인지에 따라 팰린드롬 검증과정을 생략하는 코드다
+ * faster가 null이 아니라면 길이가 홀수를 뜻하는것이고 그에따라 중간숫자를 생략하기 위해 slow를 한칸 옮겨준다.
+ */
         if (faster != null) {
             slower = slower.next;
         }
