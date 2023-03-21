@@ -1,24 +1,21 @@
 class Solution {
     final int MAX_FARE = 1_000_000;
     int[][] floyd;
-    int min;
 
     public int solution(int n, int s, int a, int b, int[][] fares) {
         floyd = new int[n + 1][n + 1];
         createFloyd(n, fares);
 
-        min = floyd[s][a] + floyd[s][b];
+        int min = floyd[s][a] + floyd[s][b];
 
         for (int i = 1 ; i <= n ; i++) {
-            int sum = floyd[s][i] + floyd[i][a] +  floyd[i][b];
-
-            min = Math.min(min, sum);
+            min = Math.min(min, floyd[s][i] + floyd[i][a] + floyd[i][b]);
         }
 
         return min;
     }
 
-    public void createFloyd(int n, int[][] fares) {
+    private void createFloyd(int n, int[][] fares) {
         for (int i = 1 ; i <= n ; i++) {
             for (int j = 1 ; j <= n ; j++) {
                 if (i == j) {
@@ -26,7 +23,6 @@ class Solution {
                 } else {
                     floyd[i][j] = MAX_FARE;
                 }
-
             }
         }
 
