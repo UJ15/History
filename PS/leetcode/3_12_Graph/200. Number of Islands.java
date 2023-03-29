@@ -40,3 +40,47 @@ class Solution {
         }
     }
 }
+
+//Second
+
+class Solution {
+    private char[][] map;
+    private int islands;
+    private boolean[][] visited;
+    private int[] dx = {-1, 1, 0, 0};
+    private int[] dy = {0, 0, -1, 1};
+
+    public int numIslands(char[][] grid) {
+        map = grid;
+        islands = 0;
+        visited = new boolean[map.length][map[0].length];
+
+        for (int i = 0 ; i < map.length ; i++) {
+            for (int j = 0 ; j < map[0].length ; j++) {
+                if (map[i][j] == '1' && !visited[i][j]) {
+                    dfs(i, j);
+                    islands++;
+                }
+            }
+        }
+
+        return islands;
+    }
+
+    private void dfs(int i, int j) {
+        visited[i][j] = true;
+
+        for (int k = 0 ; k < 4 ; k++) {
+            int nextI = i + dx[k];
+            int nextJ = j + dy[k];
+
+            if (nextI < 0 || nextJ < 0 || nextI == map.length || nextJ == map[0].length) {
+                continue;
+            }
+
+            if (map[nextI][nextJ] == '1' && !visited[nextI][nextJ]) {
+                dfs(nextI, nextJ);
+            }
+        }
+    }
+}
