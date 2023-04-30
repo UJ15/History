@@ -10,6 +10,7 @@ class Solution {
         }
 
         for (int i = 0 ; i < s.length() ; i++) {
+            //짝수, 홀수 길이의 투 포인터
             expand(i, i + 1, s);
             expand(i, i + 2, s);
         }
@@ -18,6 +19,7 @@ class Solution {
     }
 
     private void expand(int i, int j, String s) {
+        //팰린드롬일 경우 확장
         while (i >= 0 && j < s.length() && s.charAt(i) == s.charAt(j)) {
             i--;
             j++;
