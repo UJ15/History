@@ -164,3 +164,60 @@ class Solution {
         return distance[dst];
     }
 }
+/**
+ * 최적화 풀이
+ * 우선순위 큐가 아닌 일반 큐를 사용한다. (큐에 들어온 순서대로 사이클을 돎)
+ * 다익스트라를 돌때 stop이라는 변수를 만들고 k까지만 다익스트라를 돌도록 한다. 즉 다익스트라 경로 이동이 k번까지밖에 안됨
+ *
+ * 가장 직관적인 풀이인데 생각을 못한게 좀 아쉽다.
+ *
+ */
+
+class Solution {
+    private List<int[]>[] graph;
+    private int[] dist;
+
+    public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
+        createGraph(n, flights);
+        dijkstra(src, n, k);
+
+        return dist[dst] == Integer.MAX_VALUE ? -1 : dist[dst];
+    }
+
+    private void dijkstra(int src, int n, int k) {
+        Queue<int[]> q = new LinkedList<>();
+        q.offer(new int[] {src, 0});
+        dist = new int[n];
+        Arrays.fill(dist, Integer.MAX_VALUE);
+        int stop = 0;
+
+        while (!q.isEmpty() && stop <= k) {
+            int size = q.size();
+
+            while (size-- > 0) {
+                int[] cur = q.poll();
+
+                for (int[] next : graph[cur[0]]) {
+                    if (dist[next[0]] > cur[1] + next[1]) {
+                        dist[next[0]] = cur[1] + next[1];
+                        q.offer(new int[] {next[0], cur[1] + next[1]});
+                    }
+                }
+            }
+
+            stop++;
+        }
+    }
+
+    private void createGraph(int n, int[][] flights) {
+        graph = new List[n];
+
+        for (int i = 0 ; i < n ; i++) {
+            graph[i] = new ArrayList<>();
+        }
+
+        for (int[] flight : flights) {
+            graph[flight[0]].add(new int[] {flight[1], flight[2]});
+        }
+    }
+}
