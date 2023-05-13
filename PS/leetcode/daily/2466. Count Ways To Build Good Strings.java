@@ -32,8 +32,40 @@ class Solution {
         }
 
         for (int i = low ; i <= high ; i++) {
-            System.out.println("d[" + i + "]" + " : " + d[i]);
             result = (result + d[i]) % 1000000007;
+        }
+
+        return result;
+    }
+}
+
+/**
+ *
+ * Simple
+ */
+
+class Solution {
+    public int countGoodStrings(int low, int high, int zero, int one) {
+        int[] d = new int[high + 1];
+        d[0] = 1;
+        int result = 0;
+
+        for (int i = 1 ; i <= high ; i++) {
+
+            if (i >= zero) {
+                d[i] += d[i - zero];
+            }
+
+            if (i >= one) {
+                d[i] += d[i - one];
+            }
+
+            d[i] %= 1000000007;
+        }
+
+        for (int i = low ; i <= high ; i++) {
+            result += d[i];
+            result %= 1000000007;
         }
 
         return result;
