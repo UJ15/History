@@ -1,3 +1,5 @@
+//누적합 + 2차원 dp 타뷸레이션 미친거아니야?
+
 class Solution {
     public int stoneGameII(int[] piles) {
         int[][] d = new int[piles.length][piles.length];
