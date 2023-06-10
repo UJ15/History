@@ -4,15 +4,15 @@ class Solution {
         int right = maxSum - n;
 
         while (left < right) {
-            int middle = left + (right - left) / 2;
+            int middle = (left + right + 1) / 2;
             if (isPossible(n, index, maxSum - n, middle)) {
-                left = middle + 1;
+                left = middle;
             } else {
                 right = middle - 1;
             }
         }
 
-        return left;
+        return left + 1;
     }
 
     private boolean isPossible(int n, int index, int maxSum, int value) {
