@@ -26,3 +26,26 @@ class Solution {
         return result;
     }
 }
+
+//more faster
+class Solution {
+    public int maxArea(int[] height) {
+        int result = 0;
+        int left = 0;
+        int right = height.length - 1;
+        int mid = 0;
+
+        while (left < right) {
+            mid = Math.min(height[left], height[right]);
+            result = Math.max(result, mid * (right - left));
+            while (left < right && height[left] <= mid) {
+                left++;
+            }
+            while (left < right && height[right] <= mid) {
+                right--;
+            }
+        }
+
+        return result;
+    }
+}
